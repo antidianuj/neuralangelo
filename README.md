@@ -1,7 +1,7 @@
 # Neuralangelo
 This is the fork of the official repo of [**Neuralangelo**](https://github.com/NVlabs/neuralangelo), with intent for quick and easy processing of lego buildozer dataset, with following steps:
 
-## Setting up Environment
+## 1. Setting up Environment
 **Platform:** Ubuntu-22
 ```bash
 git clone https://github.com/antidianuj/neuralangelo.git
@@ -49,13 +49,13 @@ cd ..
 ```
 
 
-## Dataset Preparation (Lego Bulldozer)
+## 2. Dataset Preparation (Lego Bulldozer)
 ```bash
 chmod +x data_prepare.sh
 ./data_prepare.sh
 ```
 
-# Running Neuralangelo Training Session
+## 3. Running Neuralangelo Training Session
 The hyperaprameters for Neuralangelo training are adjusted in '/projects/neuralangelo/configs/base.yaml'.
 The recommended 'max_epochs' by authors is 500000 in 'base.yaml'. The checkpoints are stored with frequency defined by 'save_iter' in `base.yaml'.
 
@@ -65,7 +65,7 @@ chmod +x neuryangelo.sh
 ./neuryangelo.sh
 ```
 
-# Inference from Neuralangelo Trained Checkpoints for Extracting Isosurfaces as Meshes (3D representation of Lego bulldozer)
+## 4. Inference from Neuralangelo Trained Checkpoints for Extracting Isosurfaces as Meshes (3D representation of Lego bulldozer)
 ```bash
 chmod +x isosurfacer.sh
 ./isosurfacer.sh
