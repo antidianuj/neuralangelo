@@ -73,3 +73,10 @@ chmod +x isosurfacer.sh
 The resolution of the meshes can be adjusted in `isosurfacer.sh'
 
 The corresponding meshes are stored as .ply files in `/logs/example_group/example_name'. These .ply files can be quickly viewed online on [3dviewer](https://3dviewer.net/) or [point](https://point.love/)
+
+
+# Addendum
+It is difficult at first side to simply grasp how Neuralangelo is doing, so here it is. It is nothing but an improvement over NeuS at feature encoding level and loss level. So essentially it is NeuS for most part, and here is its flow diagram. The improvements are inclusion of Eikonal loss, improving feature representation via multi-resolution hash encoding, and compensation the drawback of this encoding with numerical gradients.
+
+![image](https://github.com/antidianuj/neuralangelo/assets/47445756/a1f58264-35b2-4a9f-96fa-a3063f9099c1)
+
