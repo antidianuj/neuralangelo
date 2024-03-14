@@ -2,6 +2,7 @@
 
 gdown https://drive.google.com/file/d/1yWoZ4Hk3FgmV3pd34ZbW7jEqgqyJgzHy/view?usp=drive_link --fuzzy -O lego.mp4
 
+git submodule update --init --recursive
 
 SEQUENCE=lego
 PATH_TO_VIDEO=lego.mp4
